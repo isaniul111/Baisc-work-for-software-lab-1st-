@@ -1,10 +1,9 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dark Theme Website</title>
+<title>Beautiful Index Page</title>
 
 <style>
 
@@ -16,8 +15,11 @@ font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-background:#0f172a;
-color:#e5e7eb;
+background: linear-gradient(135deg,#6a11cb,#2575fc);
+color:white;
+height:100vh;
+display:flex;
+flex-direction:column;
 }
 
 /* Navbar */
@@ -26,57 +28,54 @@ nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 60px;
-background:#020617;
-border-bottom:1px solid #1e293b;
+padding:20px 50px;
+background:rgba(0,0,0,0.2);
+backdrop-filter:blur(10px);
 }
 
 .logo{
 font-size:24px;
 font-weight:bold;
-color:#38bdf8;
 }
 
 nav ul{
-list-style:none;
 display:flex;
-gap:30px;
+list-style:none;
+gap:25px;
 }
 
 nav ul li a{
 text-decoration:none;
-color:#cbd5f5;
+color:white;
 font-size:16px;
 transition:0.3s;
 }
 
 nav ul li a:hover{
-color:#38bdf8;
+color:#ffd369;
 }
 
 /* Hero Section */
 
 .hero{
-height:90vh;
+flex:1;
 display:flex;
 justify-content:center;
 align-items:center;
-flex-direction:column;
 text-align:center;
+flex-direction:column;
 padding:20px;
 }
 
 .hero h1{
-font-size:60px;
+font-size:55px;
 margin-bottom:15px;
-color:white;
 }
 
 .hero p{
-max-width:600px;
 font-size:18px;
-color:#94a3b8;
 margin-bottom:30px;
+max-width:600px;
 }
 
 /* Buttons */
@@ -88,41 +87,38 @@ gap:20px;
 
 .btn{
 padding:12px 28px;
-border-radius:30px;
 border:none;
+border-radius:30px;
 font-size:16px;
 cursor:pointer;
 transition:0.3s;
 }
 
-.primary{
-background:#38bdf8;
-color:#020617;
+.btn-primary{
+background:white;
+color:#2575fc;
 }
 
-.primary:hover{
-background:#0ea5e9;
+.btn-primary:hover{
+background:#ffd369;
+color:black;
 }
 
-.secondary{
+.btn-secondary{
 background:transparent;
-border:2px solid #38bdf8;
-color:#38bdf8;
+border:2px solid white;
+color:white;
 }
 
-.secondary:hover{
-background:#38bdf8;
-color:#020617;
+.btn-secondary:hover{
+background:white;
+color:#2575fc;
 }
-
-/* Footer */
 
 footer{
 text-align:center;
 padding:15px;
-background:#020617;
-border-top:1px solid #1e293b;
-color:#94a3b8;
+background:rgba(0,0,0,0.2);
 }
 
 </style>
@@ -131,7 +127,7 @@ color:#94a3b8;
 <body>
 
 <nav>
-<div class="logo">DarkSite</div>
+<div class="logo">MyWebsite</div>
 
 <ul>
 <li><a href="#">Home</a></li>
@@ -143,23 +139,22 @@ color:#94a3b8;
 
 <section class="hero">
 
-<h1>Dark Modern Website</h1>
-
+<h1>Welcome to My Website</h1>
 <p>
-A beautiful dark themed website design. Clean, modern and perfect for portfolios, startups or personal websites.
+Create beautiful websites with modern design.
+This is a simple and stylish index page layout.
 </p>
 
 <div class="buttons">
-<button class="btn primary">Get Started</button>
-<button class="btn secondary">Learn More</button>
+<button class="btn btn-primary">Get Started</button>
+<button class="btn btn-secondary">Learn More</button>
 </div>
 
 </section>
 
 <footer>
-© 2026 DarkSite. All rights reserved.
+© 2026 MyWebsite | All Rights Reserved
 </footer>
 
 </body>
 </html>
-```
